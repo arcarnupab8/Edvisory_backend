@@ -1,10 +1,9 @@
-import express from 'express';
-import bodyParser from 'body-parser';
-import admin from 'firebase-admin';
-import { readFile } from 'fs/promises';
-import bcrypt from 'bcrypt';
-import jwt from 'jsonwebtoken';
-import cors from 'cors';
+const express = require('express');
+const bodyParser = require('body-parser');
+const admin = require('firebase-admin');
+const bcrypt = require('bcrypt');
+const jwt = require('jsonwebtoken');
+const cors = require('cors');
 
 // Read service account key JSON file and initialize Firebase Admin SDK
 const serviceAccount = {
@@ -255,3 +254,4 @@ app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 }); 
 
+module.exports = app

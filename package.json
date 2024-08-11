@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "Backend API for Edvisory application",
   "main": "index.js",
-  "type": "module",
   "scripts": {
     "dev": "nodemon index.js"
   },
